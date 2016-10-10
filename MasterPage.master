@@ -38,8 +38,11 @@
 			    </div>
 			    <div class="clear"></div>
 		    </div>
-		    <div class="header_top">
-			    <div class="logo">
+		    <div class="header_top" style="float:left;">
+                <div>
+                    <img src="images/rueda-logo.png" alt="" />
+                </div>
+			    <div class="logo" style="margin-top: 15px;">
 				    <a href="index.aspx"><img src="images/logo.png" alt="" /></a>
 			    </div>
 			        <div class="cart">
