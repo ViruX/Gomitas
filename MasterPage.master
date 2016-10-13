@@ -24,9 +24,6 @@
     <div class="wrap">
 	    <div class="header">
 		    <div class="headertop_desc">
-			    <div class="call">
-				        <p><span>Need help?</span> call us <span class="number">1-22-3456789</span></p>
-			    </div>
 			    <div class="account_desc">
 				    <ul>
 					    <li><a href="#">Register</a></li>
@@ -38,8 +35,8 @@
 			    </div>
 			    <div class="clear"></div>
 		    </div>
-		    <div class="header_top" style="float:left;">
-                <div>
+		    <div class="header_top">
+                <div  style="float:left;">
                     <img src="images/rueda-logo.png" alt="" />
                 </div>
 			    <div class="logo" style="margin-top: 15px;">
@@ -230,7 +227,7 @@
 			    </div>			
             </div>
             <div class="copy_right">
-				    <p>Company Name © All rights Reseverd | Design by  <a href="http://w3layouts.com">W3Layouts</a> </p>
+				    <p>Palmucci Neumaticos © Todos los derechos reservados | Diseñado por <div style="color:#B81D22;">JJ Software</div></p>
 		        </div>
         </div>
         <script type="text/javascript">
