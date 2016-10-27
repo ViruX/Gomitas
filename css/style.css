@@ -85,7 +85,8 @@ body {
 	color:#E4292F;
 }
 .header_top {
-	padding: 20px 0;
+	/*padding: 20px 0;*/
+    padding-top: 25px;
 }
 .logo {
 	float: left;
@@ -181,6 +182,7 @@ body {
 .menu li {
 	float:left;
 }
+.menu ul { margin-bottom:0px; }
 .menu li a {
 	font-family: 'ambleregular';
 	font-size:0.823em;
