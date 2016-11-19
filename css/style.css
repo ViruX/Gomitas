@@ -274,8 +274,9 @@ body {
 }
 .header_bottom_right{
 	float:left;
-	width:74%;
-	padding-left:1%;
+    width:100%;
+	/*width:74%;
+	padding-left:1%;*/
 }
 /***** Content *****/
 .content {

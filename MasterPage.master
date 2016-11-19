@@ -41,27 +41,28 @@
                 <div  style="float:left;">
                     <img src="images/rueda-logo.png" alt="" />
                 </div>
-			    <div class="logo" style="margin-top: 15px;">
-				    <a href="index.aspx"><img src="images/logo.png" alt="" /></a>
+			    <div class="logo">
+				    <a href="index.aspx"><img src="images/logo-lg.png" alt="" /></a>
 			    </div>
 	        <div class="clear"></div>
         </div>
 	    <div class="header_bottom">
-	     	    <div class="menu">
-	     		    <ul>
-			    	    <li class="active"><a href="index.aspx">Home</a></li>
-			    	    <li><a href="about.aspx">About</a></li>
-			    	    <li><a href="delivery.aspx">Delivery</a></li>
-			    	    <li><a href="news.aspx">News</a></li>
-			    	    <li><a href="contact.aspx">Contact</a></li>
-			    	    <div class="clear"></div>
-     			    </ul>
-	     	    </div>
-	     	    <div class="search_box">
-	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/><input type="submit" value="Buscar" class="btn-sm"/>
-	     	    </div>
-	     	    <div class="clear"></div>
-	            </div>	     
+            <div class="menu">
+	            <ul>
+		            <li id="mnInicio" class="active"><a href="index.aspx">Home</a></li>
+		            <li id="mnProductos"><a href="/Listado.aspx">Productos</a></li>
+                    <li id="mnNosotros"><a href="about.aspx">About</a></li>
+		            <li id="mnEnvios"><a href="delivery.aspx">Delivery</a></li>
+		            <li id="mnNovedades"><a href="news.aspx">News</a></li>
+		            <li id="mnContacto"><a href="contact.aspx">Contacto</a></li>
+		            <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="search_box">
+	            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/><input type="submit" value="Buscar" class="btn-sm"/>
+            </div>
+            <div class="clear"></div>
+            </div>	     
 	    
         </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -129,6 +130,58 @@
                 $().UItoTop({ easingType: 'easeOutQuart' });
 
             });
+
+            function pageLoad() {
+                $("#mnInicio").click(function () {
+                    $("#mnInicio").addClass('active');
+                    $("#mnProductos").removeClass('active');
+                    $("#mnNosotros").removeClass('active');
+                    $("#mnEnvios").removeClass('active');
+                    $("#mnNovedades").removeClass('active');
+                    $("#mnContacto").removeClass('active');
+                });
+                $("#mnProductos").click(function () {
+                    $("#mnProductos").addClass('active');
+                    $("#mnInicio").removeClass('active');
+                    $("#mnNosotros").removeClass('active');
+                    $("#mnEnvios").removeClass('active');
+                    $("#mnNovedades").removeClass('active');
+                    $("#mnContacto").removeClass('active');
+                });
+                $("#mnNosotros").click(function () {
+                    $("#mnNosotros").addClass('active');
+                    $("#mnProductos").removeClass('active');
+                    $("#mnInicio").removeClass('active');
+                    $("#mnEnvios").removeClass('active');
+                    $("#mnNovedades").removeClass('active');
+                    $("#mnContacto").removeClass('active');
+                });
+                $("#mnEnvios").click(function () {
+                    $("#mnEnvios").addClass('active');
+                    $("#mnProductos").removeClass('active');
+                    $("#mnInicio").removeClass('active');
+                    $("#mnNosotros").removeClass('active');
+                    $("#mnNovedades").removeClass('active');
+                    $("#mnContacto").removeClass('active');
+                });
+                $("#mnNovedades").click(function () {
+                    $("#mnNovedades").addClass('active');
+                    $("#mnProductos").removeClass('active');
+                    $("#mnInicio").removeClass('active');
+                    $("#mnEnvios").removeClass('active');
+                    $("#mnNosotros").removeClass('active');
+                    $("#mnContacto").removeClass('active');
+                });
+                $("#mnContacto").click(function () {
+                    $("#mnContacto").addClass('active');
+                    $("#mnProductos").removeClass('active');
+                    $("#mnInicio").removeClass('active');
+                    $("#mnEnvios").removeClass('active');
+                    $("#mnNovedades").removeClass('active');
+                    $("#mnNosotros").removeClass('active');
+                });
+            };
+
 	    </script>
         <a href="#" id="toTop"><span id="toTopHover"> </span></a>
     </div>
