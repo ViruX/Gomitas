@@ -11,13 +11,13 @@
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript" src="js/startstop-slider.js"></script>
-    <!-- BOOTSTRAP -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -51,9 +51,9 @@
 	            <ul>
 		            <li id="mnInicio" class="active"><a href="index.aspx">Home</a></li>
 		            <li id="mnProductos"><a href="/Listado.aspx">Productos</a></li>
-                    <li id="mnNosotros"><a href="about.aspx">About</a></li>
-		            <li id="mnEnvios"><a href="delivery.aspx">Delivery</a></li>
-		            <li id="mnNovedades"><a href="news.aspx">News</a></li>
+                    <li id="mnNosotros"><a href="about.aspx">Nosotros</a></li>
+		            <li id="mnEnvios"><a href="delivery.aspx">Envios</a></li>
+		            <li id="mnNovedades"><a href="news.aspx">Novedades</a></li>
 		            <li id="mnContacto"><a href="contact.aspx">Contacto</a></li>
 		            <div class="clear"></div>
                 </ul>
