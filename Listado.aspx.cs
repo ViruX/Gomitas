@@ -17,23 +17,9 @@ public partial class Listado : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            HTML_Categorias = CargaCategorias();
+            HTML_Categorias = (new Utiles()).ObtenerHTMLCategorias();
             HTML_ProductosInicio = ObtenerProductosInicio();
         }
-    }
-
-    protected string CargaCategorias()
-    {
-        string retorno = "";
-        ConsultaSQL consulta = new ConsultaSQL("SELECT * FROM Categorias", "Gomitas");
-        DataTable dtTabla = consulta.ObtenerTabla();
-
-        foreach (DataRow row in dtTabla.Rows)
-        {
-            retorno += "<li><a href='#'>" + row["descrip"].ToString() + "</a></li>";
-        }
-
-        return retorno;
     }
 
     protected string ObtenerProductosInicio()

@@ -22,8 +22,16 @@
 	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="main">
-    <div class="content">
+<div class="main">
+    <div class="header_bottom_left content" style="width:24%;">				
+			<div class="categories">
+				<ul>
+				<h3>Categorias</h3>
+				   <%= HTML_Categorias%>
+				</ul>
+			</div>					
+	  	</div>
+    <div class="content" style="float:right;width:75%;">
     	<div class="content_top">
     		<div class="back-links">
     		<p><a href="index.aspx">Home</a> >>>> <a href="#">Electronics</a></p>
@@ -31,7 +39,7 @@
     		<div class="clear"></div>
     	</div>
     	<div class="section group">
-				<div class="cont-desc span_1_of_2">
+				<div class="cont-desc">
 				  <div class="product-details">				
 					<div class="grid images_3_of_2">
 						<div id="container">
@@ -100,21 +108,15 @@
 					<div class="button"><span><a href="#">Add to Cart</a></span></div>					
 					<div class="clear"></div>
 				</div>
-				 <div class="wish-list">
-				 	<ul>
-				 		<li class="wish"><a href="#">Add to Wishlist</a></li>
-				 	    <li class="compare"><a href="#">Add to Compare</a></li>
-				 	</ul>
-				 </div>
 			</div>
 			<div class="clear"></div>
 		  </div>
 		<div class="product_desc">	
 			<div id="horizontalTab">
 				<ul class="resp-tabs-list">
-					<li>Product Details</li>
-					<li>product Tags</li>
-					<li>Product Reviews</li>
+					<li>Detalle</li>
+					<%--<li>product Tags</li>
+					<li>Product Reviews</li>--%>
 					<div class="clear"></div>
 				</ul>
 				<div class="resp-tabs-container">
@@ -123,7 +125,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>when an unknown printer took a galley of type and scrambled</span> it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<span> It has survived not only five centuries</span>, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>					</div>
 
-				 <div class="product-tags">
+				 <%--<div class="product-tags">
 						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 					<h4>Add Your Tags:</h4>
 					<div class="input-box">
@@ -160,68 +162,13 @@
 						  </div>
 					    </form>
 				  	 </div>				
-				</div>
+				</div>--%>
 			</div>
 		 </div>
 	 </div>
-	    <script type="text/javascript">
-	        $(document).ready(function () {
-	            $('#horizontalTab').easyResponsiveTabs({
-	                type: 'default', //Types: default, vertical, accordion           
-	                width: 'auto', //auto or any width like 600px
-	                fit: true   // 100% fit in a container
-	            });
-	        });
-   </script>		
-   <div class="content_bottom">
-    		<div class="heading">
-    		<h3>Related Products</h3>
-    		</div>
-    		<div class="see">
-    			<p><a href="#">See all Products</a></p>
-    		</div>
-    		<div class="clear"></div>
-    	</div>
-   <div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="#"><img src="images/new-pic1.jpg" alt=""></a>					
-					<div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="#"><img src="images/new-pic2.jpg" alt=""/></a>
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="#"><img src="images/new-pic4.jpg" alt=""/></a>
-					<div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <img src="images/new-pic3.jpg" alt="">
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-			</div>
+	
         </div>
-				<div class="rightsidebar span_3_of_1">
+				<%--<div class="rightsidebar span_3_of_1">
 					<h2>CATEGORIES</h2>
 					<ul>
 				      <li><a href="#">Mobile Phones</a></li>
@@ -281,9 +228,66 @@
       				 	</div>
       				 </div>
  				</div>
- 		</div>
- 	</div>
+ 		</div>--%>
+ 	    </div>
     </div>
- </div>
+    <div class="clear"></div>
+    <script type="text/javascript">
+	    $(document).ready(function () {
+	        $('#horizontalTab').easyResponsiveTabs({
+	            type: 'default', //Types: default, vertical, accordion           
+	            width: 'auto', //auto or any width like 600px
+	            fit: true   // 100% fit in a container
+	        });
+	    });
+   </script>		
+   <div class="content_bottom">
+        <div class="heading">
+            <h3>Related Products</h3>
+        </div>
+        <div class="see">
+    	    <p><a href="#">See all Products</a></p>
+        </div>
+        <div class="clear"></div>
+   </div>
+   <div class="section group">
+		<div class="grid_1_of_4 images_1_of_4">
+				<a href="#"><img src="images/new-pic1.jpg" alt=""></a>					
+			<div class="price" style="border:none">
+					    <div class="add-cart" style="float:none">								
+							<h4><a href="#">Add to Cart</a></h4>
+							</div>
+						<div class="clear"></div>
+			</div>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+			<a href="#"><img src="images/new-pic2.jpg" alt=""/></a>
+				<div class="price" style="border:none">
+					    <div class="add-cart" style="float:none">								
+							<h4><a href="#">Add to Cart</a></h4>
+							</div>
+						<div class="clear"></div>
+			</div>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+			<a href="#"><img src="images/new-pic4.jpg" alt=""/></a>
+			<div class="price" style="border:none">
+				<div class="add-cart" style="float:none">								
+					<h4><a href="#">Add to Cart</a></h4>
+					</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+			<img src="images/new-pic3.jpg" alt="">
+            <div class="price" style="border:none">
+				<div class="add-cart" style="float:none">								
+					<h4><a href="#">Add to Cart</a></h4>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
 </asp:Content>
 

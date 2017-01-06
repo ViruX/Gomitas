@@ -59,7 +59,7 @@
                 </ul>
             </div>
             <div class="search_box">
-	            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/><input type="submit" value="Buscar" class="btn-sm"/>
+	            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/><input type="submit" value="Buscar" class="button"/>
             </div>
             <div class="clear"></div>
             </div>	     

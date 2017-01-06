@@ -352,6 +352,7 @@ body {
 	padding: 1.5%;
 	text-align: center;
 	position: relative;
+    background-color:white;
 }
 .images_1_of_4  img {
 	/*max-width: 100%;*/
@@ -361,7 +362,7 @@ body {
     height:auto;
 }
 .images_1_of_4  h2 {
-	color:#6A82A4;
+	color:#222;
 	font-family: 'ambleregular';
 	font-size:1.1em;
 	font-weight: normal;
@@ -448,7 +449,8 @@ body {
 	border-left:1px solid #CECECE;
 }
 .span_1_of_4  h4 {
-	color:#4F4F4F;
+	/*color:#4F4F4F;*/
+    color: #cd1f25;
 	margin-bottom: .5em;
 	font-size: 1.2em;
 	line-height: 1.2;
@@ -467,14 +469,16 @@ body {
 .span_1_of_4  li a {
 	font-size: 0.8125em;
 	padding: 0.4em 0;
-	color:#2A5C86;
+	/*color:#2A5C86;*/
+    color:white;
 	font-family: 'ambleregular';
 	display: block;
 }
 .span_1_of_4  li span{
 	font-size:1em;
 	font-family: 'ambleregular';
-	color:#2A5C86;
+	/*color:#2A5C86;*/
+    color: white;
 	cursor:pointer;
 	margin:10px 0;
 	display:block;
@@ -548,12 +552,12 @@ body {
 }
 .back-links p {
 	font-size: 0.8125em;
-	color: #333;
+	color: white;
 }
 .back-links p a {
 	font-size: 0.9em;
 	padding: 0 1.3%;
-	color: #333;
+	color: white;
 	font-family: 'ambleregular';
 }
 .back-links p a:hover, .back-links p a:active {
@@ -579,6 +583,7 @@ body {
 	display: block;
 	float: left;
 	clear: both;
+    padding:15px;
 }
 .rightsidebar {
 	display: block;
@@ -703,12 +708,7 @@ body {
 .wish-list li a:hover {
 	color: #E4292F;
 }
-.wish-list li.wish{
-	background:url(../images/wishlist.png) no-repeat 0;
-}
-.wish-list li.compare{
-	background:url(../images/compare.png) no-repeat 0;
-}
+
 .product-desc, .product-tags {
 	clear: both;
 	padding-top: 20px;
